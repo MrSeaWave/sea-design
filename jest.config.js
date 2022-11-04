@@ -1,4 +1,4 @@
-const esModules = ['testing-library__dom', '@sea-org/rc-test-helpers'].join('|');
+const esModules = ['testing-library__dom'].join('|');
 
 module.exports = {
   preset: 'ts-jest',
