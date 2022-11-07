@@ -4,7 +4,7 @@
   "description": "React components",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "lint:js": "eslint --cache --ext .js,.jsx,.ts,.tsx packages/",
     "lint:fix": "npm run lint:js -- --fix",
     "prepare": "husky install"
@@ -46,6 +46,8 @@
     "testing-library__dom": "^7.29.4-beta.1",
     "ts-jest": "^29.0.3",
     "tslib": "^2.4.1",
-    "typescript": "^4.8.4"
+    "typescript": "^4.8.4",
+    "vite": "^3.2.2",
+    "vite-plugin-dts": "^1.6.6"
   }
 }

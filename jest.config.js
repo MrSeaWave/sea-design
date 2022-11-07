@@ -1,3 +1,5 @@
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const path = require('path');
 const esModules = ['testing-library__dom'].join('|');
 
 module.exports = {
@@ -15,4 +17,5 @@ module.exports = {
   moduleNameMapper: {
     '\\.(scss|sass|css)$': 'identity-obj-proxy',
   },
+  setupFilesAfterEnv: [path.resolve(__dirname, './jest.setup.js')],
 };

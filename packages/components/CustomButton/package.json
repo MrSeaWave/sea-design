@@ -1,13 +1,14 @@
 {
-  "name": "@sea-org/rc-button",
+  "name": "@sea-org/rc-depend-button",
   "version": "1.0.0",
   "description": "@sea-org/rc-button",
   "main": "lib/index.js",
   "module": "es/index.js",
   "typings": "lib/index.d.ts",
+  "private":true,
   "scripts": {
     "test": "jest",
-    "build":"vite build"
+    "build": "vite build"
   },
   "keywords": [
     "react",
@@ -15,7 +16,7 @@
     "Button",
     "rc-button"
   ],
-  "author": "",
+  "author": "MrSeaWave",
   "license": "MIT",
   "files": [
     "dist",
@@ -35,5 +36,8 @@
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "dependencies": {
+    "@sea-org/rc-button": "workspace:^1.0.0"
   }
 }
